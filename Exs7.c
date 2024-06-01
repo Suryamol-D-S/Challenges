@@ -1,3 +1,5 @@
+// test example switch statement in a program.  See what happen if you leave out some of the break
+
 #include <stdio.h>
 int main() {
     int count;
