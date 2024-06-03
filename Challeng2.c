@@ -1,32 +1,22 @@
-// Numerical derivative for sin, cos and sqrt 
+// Numerical derivative for sin...
 
 #include <stdio.h>
 #include <math.h>
     
-double f(double x)
+double F(double x)
 {
     return sin(x);
 }
-double f1(double x)
-{
-    return cos(x);
+double numerical_derivative(double *F(double), double x, double h) {
+    return (F(x + h) - F(x)) / h;
 }
-double f2(double x)
-{
-    return sqrt(x);
-}
-double f(double x);
-double f1(double x);
-double f2(double x);
+double F(double x);
 int main() {
     double x;
+    double h =0.0001;
     printf("Enter the value : ");
     scanf("%g", &x);
-    double d1 = cos(x);
-    double d2 = -sin(x);
-    double d3 = 1 / (2 * sqrt(x));
-    printf("Derivatives : %g\n",d1);
-    printf("Derivatives : %g\n",d2);
-    printf("Derivatives : %g\n",d3);
+    double derivative = numerical_derivative(F, x, h);
+    printf("Derivatives : %g\n",cos);
     return 0;
 }
