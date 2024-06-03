@@ -7,16 +7,16 @@ double F(double x)
 {
     return sin(x);
 }
-double numerical_derivative(double *F(double), double x, double h) {
+double numerical_derivative(double (*F)(double), double x, double h) {
     return (F(x + h) - F(x)) / h;
 }
-double F(double x);
+
 int main() {
     double x;
-    double h =0.0001;
+    double h =0.001;
     printf("Enter the value : ");
-    scanf("%g", &x);
+    scanf("%lf", &x);
     double derivative = numerical_derivative(F, x, h);
-    printf("Derivatives : %g\n",cos);
+    printf("Derivatives : %f\n",derivative);
     return 0;
 }
