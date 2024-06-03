@@ -72,7 +72,7 @@ void mergeSort(int arr[], int l, int r) {
     }
 }
 
-// Main Code
+// Main Function
 int main() {
     int n;
     printf("Enter the number of elements: ");
