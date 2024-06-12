@@ -1,3 +1,9 @@
+/* Show that A \ B can be computed by A - (A&B) 
+================================================
+Output : -
+A\B is {5, 6, 7}
+*/
+
 #include <stdio.h>
 int setDifference(int A[], int sizeA, int B[], int sizeB);
 int main() {
