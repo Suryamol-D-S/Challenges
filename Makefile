@@ -4,23 +4,43 @@ CC = c99
 # Compiler flags
 CFLAGS = -Wall 
 
+LDFLAGS := -lm
 # Source files
-SRCS = 01-merge-sort.c 01-quick-sort.c 02-sin-cos.c 02-decrement.c 07-switch.c 08-clock.c 03-pi.c 05-complex-numbers.c 06-linear-algebra.c 07-adjacency-matrix.c 09-factorization.c 
-		01-if.c 13-signed-long-long.c 14-unsigned.c 17-implicit-conversion.c 22-A\B.c 33-INT_MAX.c Man-struct-tm.c String-function.c
+objects = exercises/02-decrement \
+	exercises/14-unsigned \
+	exercises/13-signed-long-long \
+	exercises/04-macro-max \
+	exercises/Man-struct-tm \
+	exercises/59-hexatridecimal \
+	exercises/07-rat-get-prod \
+	exercises/01-if \
+	exercises/17-implicit-conversion \
+	exercises/22-a-b \
+	exercises/33-INT_MAX \
+	exercises/String-function \
+	exercises/09-shift-numbers-pointers \
+	exercises/03-macro-sum \
+	exercises/08-clock \
+	exercises/54-stdout \
+	exercises/07-switch \
+	challanges/05-complex-numbers \
+	challanges/01-merge-sort \
+	challanges/06-linear-algebra \
+	challanges/09-factorization \
+	challanges/10-performance-comparison \
+	challanges/07-adjacency-matrix \
+	challanges/04-Union-find \
+	challanges/03-pi \
+	challanges/01-quick-sort \
+	challanges/02-sin-cos \
+	exercises/08--type-computation
 
-# object files
-OBJS = $(SRCS:.c=.o)
+all: $(objects)
 
-# Files in folder
-challanges exercises Makefile
+$(objects): %: %.c
+	$(CC) $(CFLAGS)  -o $@  $< $(LDFLAGS)
 
-TARGET = program
-
-all : $(TARGET)
-
-%.o: %.c
-	$(CC) $(CFLAGS) -o $@ -c $< -lm
 
 # Cleaning Generated Code
 clean:
-	rm -rf $(OBJS)
+	rm -rf $(objects)
