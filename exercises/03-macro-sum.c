@@ -11,7 +11,8 @@ Result: 49
 // Define macro for sum of two values
 #define sum(a, b) (a + b)
 
-int main() {
+int main()
+{
     // Evaluate sum(5, 2)*7
     int result = sum(5, 2) * 7;
 

@@ -15,7 +15,8 @@ Therefore, the smallest integer value for the platform (-9223372036854775808) ca
 #include <stdio.h>
 #include <limits.h>
 
-int main() {
+int main()
+{
     long long int min = LLONG_MIN;
 
     // Attempt to write the smallest integer value with a minus sign
