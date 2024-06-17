@@ -15,7 +15,8 @@ Pi: 3.1415
 
 #include <stdio.h>
 
-int main() {
+int main()
+{
     // Number of decimal places to print
     int n;
 
@@ -26,7 +27,8 @@ int main() {
     // Print pi with the desired number of decimal places
     printf("Pi: 3.");
     for (int i = 0; i < n; ++i) {
-        printf("%c","14159265358979323846264338327950288419716939937510"[i]);
+	printf("%c",
+	       "14159265358979323846264338327950288419716939937510"[i]);
     }
     printf("\n");
 

@@ -21,16 +21,18 @@ hexatridecimal('$') = -1
 #include <stdio.h>
 #include <ctype.h>
 
-unsigned hexatridecimal(int a) {
+unsigned hexatridecimal(int a)
+{
     if (isdigit(a)) {
-        return a - '0';
+	return a - '0';
     } else {
-        a = toupper(a);
-        return (isupper(a)) ? 10 + (a - 'A') : -1;
+	a = toupper(a);
+	return (isupper(a)) ? 10 + (a - 'A') : -1;
     }
 }
 
-int main() {
+int main()
+{
     printf("hexatridecimal('0') = %u\n", hexatridecimal('0'));
     printf("hexatridecimal('9') = %u\n", hexatridecimal('9'));
     printf("hexatridecimal('A') = %u\n", hexatridecimal('A'));

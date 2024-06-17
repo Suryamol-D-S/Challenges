@@ -31,26 +31,33 @@ Find the root of 4 after union is 8
 
 size_t parent[SIZE];
 
-void initial(size_t n) {
-    for(size_t i=0; i<n; i++) {
-        parent[i] = i;
+void initial(size_t n)
+{
+    for (size_t i = 0; i < n; i++) {
+	parent[i] = i;
     }
 }
-size_t find(size_t i) {
-    while(parent[i] != i) {
-        i = parent[i];
+
+size_t find(size_t i)
+{
+    while (parent[i] != i) {
+	i = parent[i];
     }
     return i;
 }
-void Union(size_t i1, size_t i2) {
+
+void Union(size_t i1, size_t i2)
+{
     size_t root1 = find(i1);
     size_t root2 = find(i2);
 
     if (root1 != root2) {
-        parent[root2] = root1;
+	parent[root2] = root1;
     }
 }
-int main() {
+
+int main()
+{
     size_t n;
     printf("Enter the number of elements : ");
     scanf("%zu", &n);
@@ -64,7 +71,7 @@ int main() {
 
     printf("Enter the indices for Union operations :");
     scanf("%zu %zu", &i1, &i2);
-    Union(i1,i2);
+    Union(i1, i2);
     printf("Find the root of %zu after union is %zu\n", i1, find(i1));
     printf("Find the root of %zu after union is %zu\n", i2, find(i2));
     return 0;
