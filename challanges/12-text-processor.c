@@ -1,3 +1,127 @@
+/*(text processor). For a text processor, can you use a doubly linked list
+to store text? The idea is to represent a “blob” of text through a struct that contains a
+string (for the text) and pointers to preceding and following blobs.
+Can you build a function that splits a text blob in two at a given point?
+One that joins two consecutive text blobs?
+================================================================
+OUTPUT :
+================================================================
+
+*********Main Menu*********
+Choose one option from the following list ...
+===============================================
+1. Insert at beginning
+2. Insert at end
+3. Split text blob at specific index
+4. Join with next text blob
+5. Display
+6. Exit
+Enter your choice?
+1
+Enter text to insert at beginning: Hello, 
+Node inserted at the beginning
+
+*********Main Menu*********
+Choose one option from the following list ...
+===============================================
+1. Insert at beginning
+2. Insert at end
+3. Split text blob at specific index
+4. Join with next text blob
+5. Display
+6. Exit
+Enter your choice?
+2
+Enter text to insert at end: World!
+Node inserted at the end
+
+*********Main Menu*********
+Choose one option from the following list ...
+===============================================
+1. Insert at beginning
+2. Insert at end
+3. Split text blob at specific index
+4. Join with next text blob
+5. Display
+6. Exit
+Enter your choice?
+5
+
+Printing values...
+Hello, 
+World!
+
+*********Main Menu*********
+Choose one option from the following list ...
+===============================================
+1. Insert at beginning
+2. Insert at end
+3. Split text blob at specific index
+4. Join with next text blob
+5. Display
+6. Exit
+Enter your choice?
+4
+Nodes joined successfully
+
+*********Main Menu*********
+Choose one option from the following list ...
+===============================================
+1. Insert at beginning
+2. Insert at end
+3. Split text blob at specific index
+4. Join with next text blob
+5. Display
+6. Exit
+Enter your choice?
+5
+
+Printing values...
+Hello, World!
+
+*********Main Menu*********
+Choose one option from the following list ...
+===============================================
+1. Insert at beginning
+2. Insert at end
+3. Split text blob at specific index
+4. Join with next text blob
+5. Display
+6. Exit
+Enter your choice?
+3
+Enter index to split text: 6
+Text split at position 6
+
+*********Main Menu*********
+Choose one option from the following list ...
+===============================================
+1. Insert at beginning
+2. Insert at end
+3. Split text blob at specific index
+4. Join with next text blob
+5. Display
+6. Exit
+Enter your choice?
+5
+
+Printing values...
+Hello,
+ World!
+
+*********Main Menu*********
+Choose one option from the following list ...
+===============================================
+1. Insert at beginning
+2. Insert at end
+3. Split text blob at specific index
+4. Join with next text blob
+5. Display
+6. Exit
+Enter your choice?
+6
+=================================================================*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
