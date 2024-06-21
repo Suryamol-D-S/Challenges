@@ -1,3 +1,9 @@
+/*Implement function rat_print as declared in listing 10.1. This function should use -> to access the members of its rat* argument. The printout should have the form ±nom/denum.
+
+Output :-
+Rational number: +3/4
+Rational number: -3/4
+*/
 #include <stdio.h>
 #include <stdbool.h>
 #include <stddef.h>

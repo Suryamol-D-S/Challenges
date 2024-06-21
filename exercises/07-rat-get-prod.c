@@ -1,3 +1,10 @@
+/*The function rat_get_prod can produce intermediate values that may cause it to produce wrong results, even if the mathematical result of the multiplication is representable in rat. How is that?
+
+Output :-
+Enter the numerator and denominator of the first rational number (separated by a space): 20 3
+Enter the numerator and denominator of the second rational number (separated by a space): 7 6
+Product: 140/18
+*/
 #include <stdio.h>
 
 // Structure to represent a rational number

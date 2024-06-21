@@ -1,3 +1,9 @@
+/*Reimplement the rat_get_prod function such that it produces a correct result every time the mathematical result value is representable in a rat. This can be done with two calls to rat_get_normal instead of one.
+
+Output :-
+GCD: 1
+*/
+
 #ifndef RATIONALS_H
 #define RATIONALS_H 1
 #include <stdio.h>
