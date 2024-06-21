@@ -33,7 +33,14 @@ objects = exercises/02-decrement \
 	challanges/03-pi \
 	challanges/01-quick-sort \
 	challanges/02-sin-cos \
-	exercises/08--type-computation
+	exercises/08--type-computation \
+	challanges/12-text-processor \
+	exercises/14-rat_print \
+	exercises/15-rat-print-normalized \
+	exercises/23-bytes-pointer \
+	exercises/24-address-consecutive-array \
+	exercises/33-extern-shadow \
+
 
 all: $(objects)
 
